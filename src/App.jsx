@@ -63,8 +63,9 @@ function App() {
         <div className="container" data-aos="fade-up">
 
           <div className="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-            <div className="col-xl-6 col-lg-8">
-              <h1>Bienvenidos<span>.</span></h1>
+            <div className="col-xl-8 col-lg-10">
+              <h2>Ningún desierto<span>.</span></h2><br></br>
+              <h2>Está poblado de historias<span>.</span></h2>
               <h2></h2>
             </div>
           </div>
@@ -156,8 +157,8 @@ function App() {
 
                     <div className="phone">
                       <i> <RiWhatsappFill color="whitesmoke" /> </i>
-                      <h4>WhatsApp y Llamadas:</h4>
-                      <a href="tel:+5492974610883"> (0297) 154 610 883</a>
+                      <h4>WhatsApp:</h4>
+                      <a href="https://wa.me/5492974610883"> (0297) 154 610 883</a>
                     </div>
 
                   </div>
