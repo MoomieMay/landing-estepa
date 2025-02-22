@@ -1,9 +1,20 @@
 import { useState, useEffect } from "react";
-import { RiMapPin2Fill, RiWhatsappFill, RiFacebookBoxFill, RiInstagramFill} from '@remixicon/react'
+import { RiMapPin2Fill, RiWhatsappFill, RiFacebookBoxFill, RiInstagramFill, RiMenuLine } from '@remixicon/react'
 import './App.css'
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  // Función para alternar el estado del menú (abrir/cerrar)
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  // Función para cerrar el menú al hacer clic en un enlace
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,18 +38,23 @@ function App() {
         <div className="container d-flex align-items-center justify-content-lg-between">
 
           <h1 className="logo me-auto me-lg-0"><a href="index.html"><img style={{ height: "75px" }} src='assets/logo-nombre.png' /><span>
-            </span></a></h1>
+          </span></a></h1>
 
-          <nav id="navbar" className="navbar order-last order-lg-0">
+          <nav id="navbar" className={`navbar order-last order-lg-0 ${menuOpen ? 'navbar-mobile' : ''}`}>
             <ul>
-              <li><a className="nav-link scrollto active" href="#hero">Inicio</a></li>
-              <li><a className="nav-link scrollto" href="#about">Espectáculo</a></li>
-              <li><a className="nav-link scrollto" href="#contact">Contacto</a></li>
+              <li><a className="nav-link scrollto active" href="#hero" onClick={closeMenu}>Inicio</a></li>
+              <li><a className="nav-link scrollto" href="#about" onClick={closeMenu}>Espectáculo</a></li>
+              <li><a className="nav-link scrollto" href="#contact" onClick={closeMenu}>Contacto</a></li>
             </ul>
-            <i className="bi bi-list mobile-nav-toggle"></i>
+            {/* Icono de menú hamburguesa */}
+            <div
+              className="mobile-nav-toggle"
+              onClick={toggleMenu} // Llama a la función para alternar el estado
+            >
+              <i> <RiMenuLine/> </i>
+            </div>
+
           </nav>
-
-
         </div>
       </header>
 
@@ -133,13 +149,13 @@ function App() {
                 <div className="col-lg-6">
                   <div className="info">
                     <div className="address">
-                      <i> <RiMapPin2Fill color="whitesmoke"/> </i>
+                      <i> <RiMapPin2Fill color="whitesmoke" /> </i>
                       <h4>Ubicación:</h4>
                       <p>Independencia y Barbara Serrano, Z9011 Caleta Olivia, Santa Cruz</p>
                     </div>
 
                     <div className="phone">
-                      <i> <RiWhatsappFill color="whitesmoke"/> </i>
+                      <i> <RiWhatsappFill color="whitesmoke" /> </i>
                       <h4>WhatsApp y Llamadas:</h4>
                       <a href="tel:+5492974610883"> (0297) 154 610 883</a>
                     </div>
@@ -160,8 +176,8 @@ function App() {
               <h3>Nuestras Redes Sociales</h3>
               <p> Seguinos en nuestras redes para enterarte de más información.</p>
               <div className="social-links mt-3">
-                <a href="https://www.facebook.com/share/1ExYStjYLE/?mibextid=wwXIfr" className="facebook" target="_blank" style={{ marginRight: "20px" }}> <RiFacebookBoxFill size={50}/> </a>
-                <a href="https://www.instagram.com/teatrocemepa?igsh=MWd4aWMwa2xzbjh2cA==" className="instagram" target="_blank" style={{ marginRight: "20px" }}><RiInstagramFill size={50}/></a>
+                <a href="https://www.facebook.com/share/1ExYStjYLE/?mibextid=wwXIfr" className="facebook" target="_blank" style={{ marginRight: "20px" }}> <RiFacebookBoxFill size={50} /> </a>
+                <a href="https://www.instagram.com/teatrocemepa?igsh=MWd4aWMwa2xzbjh2cA==" className="instagram" target="_blank" style={{ marginRight: "20px" }}><RiInstagramFill size={50} /></a>
 
               </div>
             </div>

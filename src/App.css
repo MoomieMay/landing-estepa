@@ -286,6 +286,20 @@ h6 {
   display: block;
 }
 
+/* Estilos para pantallas grandes */
+@media (min-width: 992px) {
+  .navbar-mobile {
+    display: none;
+  }
+}
+
+/* Estilos para el menú en pantallas pequeñas */
+@media (max-width: 991px) {
+  .navbar-nav {
+    display: block;
+  }
+}
+
 /*--------------------------------------------------------------
 # Hero Section: index
 --------------------------------------------------------------*/
