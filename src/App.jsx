@@ -124,7 +124,7 @@ function App() {
                   </ul>
 
                   <strong className="subtitulo">Agradecimientos</strong>
-                  <p>CeMEPA, Fabiola Cabañas, Alicia Beatriz Perez, Alicia Millahuala, Verónica Següino, Eduardo Del Valle</p>
+                  <p>CeMEPA, Fabiola Cabañas, Alicia Beatriz Perez, Alicia Millahuala, Verónica Següino, Giuliana Díaz, Eduardo Del Valle</p>
                 </div>
 
               </div>
