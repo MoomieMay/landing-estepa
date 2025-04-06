@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -26,9 +27,58 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+/*HOME*/
+.hero-section {
+  background-image: url('/src/assets/fondo-1.png'); /* Cambiá por la imagen real */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+
+.about-section {
+  background-color: #fff;
+  color: #000;
+}
+
+.contact-section {
+  background-color: whitesmoke;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.main-header {
+  background-color: rgba(0, 0, 0, 1); /* opaco al principio */
+  transition: background-color 0.3s;
+  padding: 5px 0;
+  color: #fff;
+  z-index: 999;
+}
+
+.main-header.scrolled {
+  background-color: rgba(0, 0, 0, 0.75); /* menos opaco cuando se scrollea */
+}
+
 #header {
   transition: all 0.5s;
   z-index: 997;
@@ -75,14 +125,14 @@ h6 {
 }
 
 .navbar ul {
+  display: flex;
+  gap: 20px; /* espacio horizontal entre opciones */
+  list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  list-style: none;
-  align-items: center;
 }
 
-.navbar li {
+.navbar ul li {
   position: relative;
 }
 
@@ -116,16 +166,16 @@ h6 {
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 14px;
-  top: calc(100% + 30px);
+  left: 25px;
+  top: calc(100% + 40px);
   margin: 0;
-  padding: 10px 0;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: whitesmoke;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
+  border-radius: 0%;
 }
 
 .navbar .dropdown ul li {
@@ -236,7 +286,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #151515;
+  color: #151515 !important;
 }
 
 .navbar-mobile a:hover,
@@ -285,6 +335,14 @@ h6 {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
+.navbar .dropdown-menu {
+  display: none;
+}
+
+.navbar .dropdown.dropdown-active .dropdown-menu {
+  display: block;
+}
+
 
 /* Estilos para pantallas grandes */
 @media (min-width: 992px) {
@@ -300,9 +358,24 @@ h6 {
   }
 }
 
+
 /*--------------------------------------------------------------
 # Hero Section: index
 --------------------------------------------------------------*/
+.hero-section {
+  background-image: url('assets/hero-estepa.jpg'); /* tu imagen real */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh; /* altura reducida */
+}
+
+.hero-text {
+  font-family: 'Parisienne', cursive;
+  font-size: 2.5rem;
+}
+
 #hero {
   width: 100%;
   height: 300px;
@@ -406,6 +479,11 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about-section {
+  color: #000;
+  background-color: whitesmoke;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 28px;
@@ -443,20 +521,15 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: rgb(231,191,119);
-  background: radial-gradient(circle, rgba(231,191,119,1) 0%, rgba(109,119,60,1) 100%); 
+  background: rgba(109,119,60,1) 100%;
   background-size: cover;
-  padding: 40px 0;
-}
-
-.cta h3 {
-  color: #5f4329;
-  font-size: 28px;
-  font-weight: 700;
+  padding: 15px 0;
 }
 
 .cta p {
-  color: #5f4329;
+  color: whitesmoke;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .cta .cta-btn {
@@ -526,7 +599,7 @@ section {
 
 .contact .info .email,
 .contact .info .phone {
-  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .contact .php-email-form {
@@ -634,56 +707,19 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
-.breadcrumbs {
-  padding: 15px 0;
-  background: whitesmoke;
-  min-height: 40px;
-  margin-top: 74px;
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
 
-.breadcrumbs h2 {
-  font-size: 28px;
-  font-weight: 400;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.breadcrumbs ol li+li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li+li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #2f2f2f;
-  content: "/";
-}
-
-@media (max-width: 992px) {
-  .breadcrumbs {
-    margin-top: 68px;
-  }
-
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-
-  .breadcrumbs ol {
-    display: block;
-  }
-
-  .breadcrumbs ol li {
-    display: inline-block;
-  }
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 /*--------------------------------------------------------------
@@ -693,7 +729,6 @@ section {
   background: black;
   align-items: center;
   text-align: center;
-  padding: 20px 0 20px 0;
   color: #fff;
   font-size: 14px;
 }
@@ -729,24 +764,29 @@ section {
   color: #fff;
 }
 
-#cta .container .text-center .social-links a {
-  font-size: 50px;
+.social-links a {
   display: inline-block;
   /*background: #292929;*/
   color: #fff;
   line-height: 1;
-  padding: 8px 0;
+  padding: 0px 0;
   margin-right: 4px;
   border-radius: 4px;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   transition: 0.3s;
 }
 
-#cta .container .text-center .social-links a:hover {
+.social-links a:hover {
   color: #ffc451;
   text-decoration: none;
+}
+
+.copy{
+  margin:0;
+  font-style: italic;
+  font-size: 12px;
 }
 
 #footer .footer-top h4 {
