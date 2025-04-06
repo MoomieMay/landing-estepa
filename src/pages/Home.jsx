@@ -34,13 +34,13 @@ function Home() {
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="src/assets/carrousel1.jpg" class="d-block w-100" alt=""></img>
+                                    <img src="https://res.cloudinary.com/dkwlpigxv/image/upload/v1743905766/carrousel1_cjlmfw.jpg" class="d-block w-100" alt=""></img>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="src/assets/carrousel2.jpg" class="d-block w-100" alt=""></img>
+                                    <img src="https://res.cloudinary.com/dkwlpigxv/image/upload/v1743905767/carrousel2_vlpupm.jpg" class="d-block w-100" alt=""></img>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="src/assets/carrousel3.png" class="d-block w-100" alt=""></img>
+                                    <img src="https://res.cloudinary.com/dkwlpigxv/image/upload/v1743905770/carrousel3_jnehje.png" class="d-block w-100" alt=""></img>
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
