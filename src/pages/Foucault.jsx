@@ -5,7 +5,7 @@ function Foucault() {
       <div className="container" data-aos="fade-up">
         <div className="row">
           <div className="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="src/assets/flyerFoucault.jpg" className="img-fluid" alt="" />
+            <img src="https://res.cloudinary.com/dkwlpigxv/image/upload/v1743905519/flyerFoucault_kh3uez.png" className="img-fluid" alt="" />
           </div>
           <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
             <h3 className="fw-bold">Foucault 3124</h3>
