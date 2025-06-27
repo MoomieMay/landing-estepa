@@ -7,14 +7,14 @@ function Home() {
 
     useEffect(() => {
         if (location.state?.scrollTo) {
-          const el = document.getElementById(location.state.scrollTo);
-          if (el) {
-            setTimeout(() => {
-              el.scrollIntoView({ behavior: 'smooth' });
-            }, 100); // espera a que todo cargue
-          }
+            const el = document.getElementById(location.state.scrollTo);
+            if (el) {
+                setTimeout(() => {
+                    el.scrollIntoView({ behavior: 'smooth' });
+                }, 100); // espera a que todo cargue
+            }
         }
-      }, [location]);
+    }, [location]);
 
     return (
         <>
@@ -56,11 +56,15 @@ function Home() {
                     <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
                         <h3>Un poco sobre nosotros...</h3>
                         <p className="">
-                            Somos un elenco poliforme de experimentación teatral que busca romper los límites de la escena tradicional.
-                            Cada proyecto es una oportunidad para explorar nuevas formas de expresión, desafiando estructuras narrativas
-                            y estéticas.<br />
-                            Formamos parte de la Escuela Municipal de Teatro perteneciente al CeMEPA, desde donde impulsamos propuestas que invitan al público a vivir
-                            experiencias teatrales intensas, sensibles y transformadoras.
+                            La Estepa Teatro es un elenco teatral poliforme de experimentación escénica que forma parte de la Escuela Municipal de Teatro de Caleta Olivia, 
+                            dependiente del CeMEPA. Nacido como una propuesta profesionalizante para estudiantes avanzados/as, se constituye también como un colectivo artístico 
+                            independiente que busca romper los límites de la escena tradicional. <br></br>
+                            Cada proyecto es una oportunidad para explorar nuevas formas de expresión, desafiando estructuras narrativas y estéticas, 
+                            e investigando lenguajes que tensionan lo actoral, lo performático y lo interdisciplinario. Desde una mirada situada, 
+                            nuestras obras dialogan con el territorio, con las problemáticas contemporáneas y con las potencias sensibles de la escena. <br></br>
+                            Coordinado por docentes y artistas de la Escuela Municipal de Teatro, el elenco promueve una formación integral que se entrelaza con la creación viva, 
+                            proponiendo un hacer teatral comprometido, colectivo y transformador. La Estepa Teatro invita al público a vivir experiencias intensas, poéticas y 
+                            profundamente humanas, donde el teatro se vuelve un espacio para la pregunta, el asombro y el encuentro.
                         </p>
                     </div>
                 </div>
