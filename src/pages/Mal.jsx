@@ -9,7 +9,7 @@ function Mal() {
             <div className="container" data-aos="fade-up">
                 <div className="row">
                     <div className="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-                        <img src="https://res.cloudinary.com/dkwlpigxv/image/upload/v1751052947/flyerElMal_sdaook.png" className="img-fluid" alt="" />
+                        <img src="https://res.cloudinary.com/dkwlpigxv/image/upload/v1751054639/flyerElMal_sdaook.png" className="img-fluid" alt="" />
                     </div>
                     <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
                         <strong className="subtitulo">Sinopsis</strong> <br></br>
