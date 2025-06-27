@@ -24,12 +24,12 @@ function Foucault() {
                 <li><strong>Psiquiatra</strong> - Allegra Pagano</li>
                 <li><strong>Psicólogo Social</strong> - Emma Ducasse</li>
                 <li><strong>Cybor</strong> - Fabricio Martel</li>
-                <li><strong>El lider</strong> - David Aybar</li>
+                <li><strong>El lider</strong> - David Aibar</li>
                 <li><strong>Electrónica (Maniático Obsesivo)</strong> - Celene Morales</li>
                 <li><strong>La pereza / El olvido</strong> - Catalina De Lisio</li>
                 <li><strong>El desamor / Volver a enamorarse </strong> - Juliana Gribaudo </li>
-                <li><strong>Recolector (Roba) </strong> - Lucas Celiz</li>
-                <li><strong>La voluptuosidad / El aturdimiento</strong> - Natalia Aguesta</li>
+                <li><strong>Recolector (Roba) </strong> - Luca Celiz</li>
+                <li><strong>La voluptuosidad / El aturdimiento</strong> - Natalia Agesta</li>
                 <li><strong></strong> Fabiola Cabañas </li>
 
               </ul>
@@ -37,7 +37,6 @@ function Foucault() {
               <strong className="subtitulo">Coordinadores</strong>
               <ul>
                 <li><strong>Dirección General:</strong> David Romano</li>
-                <li hidden><strong>Fonoaudióloga:</strong> Verónica Seguino</li>
                 <li><strong>Expresión Corporal:</strong> Nahir Sánchez</li>
               </ul>
 
@@ -48,6 +47,7 @@ function Foucault() {
                 <li><strong>Make up y Vestuario:</strong> Mariana Paredes</li>
                 <li><strong>Ilustraciones Originales:</strong> Benjamín Rivero</li>
                 <li><strong>Jefe de Departamento EMT/CeMEPA: </strong> Huayra Martincic</li>
+                <li><strong>Fonoaudióloga:</strong> Verónica Seguino</li>
               </ul>
               <p></p>
             </div>
