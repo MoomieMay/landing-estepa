@@ -2,13 +2,16 @@
 function Prudencia() {
   return (
     <section className="container py-5">
+      <div className="text-center mb-4">
+        <h1 className="fw-bold title">La Prudencia</h1>
+        <h5 className="subtitle">Elenco de Adultas "La Estepa"</h5>
+      </div>
       <div className="container" data-aos="fade-up">
         <div className="row">
           <div className="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
             <img src="assets/poster.png" className="img-fluid" alt="" />
           </div>
           <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-            <h3 className="fw-bold">La Prudencia</h3>
             <strong className="subtitulo">Sinopsis</strong> <br></br>
 
             <p className="fst-italic">

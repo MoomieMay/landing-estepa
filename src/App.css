@@ -879,3 +879,21 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+/*--------------------------------------------------------------
+# Espectaculos - Descripción
+--------------------------------------------------------------*/
+
+.title {
+  font-family: 'Arial', serif; /* Cambia a la tipografía que prefieras */
+  font-size: 3rem; /* Tamaño del título */
+  color: black; /* Color del texto */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  margin-bottom: 0.5rem; /* Espacio debajo del título */
+}
+.subtitle {
+  font-family: 'Arial', sans-serif; /* Cambia a la tipografía que prefieras */
+  font-size: 1.2rem; /* Tamaño del subtítulo */
+  color: #938936; /* Color del subtítulo */
+  font-style: italic; /* Estilo en cursiva */
+}

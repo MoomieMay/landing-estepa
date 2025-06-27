@@ -94,7 +94,7 @@ function Home() {
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.9416081322547!2d-67.52984152295595!3d-46.451771575208156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbde5dfce1c8ba749%3A0xb88433aa811330a0!2sCemepa!5e1!3m2!1ses-419!2sar!4v1740182848823!5m2!1ses-419!2sar"
                             width="100%"
-                            height="50"
+                            height="25"
                             style={{ border: 0 }}
                             allowFullScreen=""
                             loading="lazy"
